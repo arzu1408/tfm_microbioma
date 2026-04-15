@@ -1,0 +1,27 @@
+name: tfm_microbioma
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - snakemake=7.32.4
+  - fastqc=0.12.1
+  - fastp=0.23.4
+  - trimmomatic=0.39
+  - multiqc=1.19
+  - bowtie2
+  - samtools
+  - kraken2
+  - bracken=3.1
+  - metaphlan=4.0.6
+  - centrifuge=1.0.4
+  - krona=2.8.1
+  - r-base=4.3.2
+  - bioconductor-phyloseq=1.46.0
+  - r-vegan=2.6_4
+  - r-ggplot2=3.4.4
+  - jupyter=1.0.0
+  - pandas=2.1.4
+  - numpy=1.26.2
+  - sra-tools
