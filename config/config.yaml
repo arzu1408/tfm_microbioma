@@ -1,0 +1,40 @@
+samples:
+  - DRR318378
+  - DRR318379
+  - DRR318380
+  - DRR318381
+  - DRR318382
+  - DRR318383
+
+host: arabidopsis
+
+references:
+  arabidopsis:
+    bowtie2_index: data/ref/tair10/tair10_index
+    genome: data/ref/tair10/TAIR10.1_genome.fa
+
+databases:
+  kraken2: data/db/kraken2/k2_pluspf
+  metaphlan4: data/db/metaphlan4
+  centrifuge: data/db/centrifuge/p+h+v
+
+params:
+  fastp:
+    min_length: 50
+    quality: 20
+  bowtie2:
+    mode: very-sensitive
+  kraken2:
+    confidence: 0.1
+    read_length: 150
+  bracken:
+    level: S
+    min_reads: 10
+
+threads:
+  fastqc: 4
+  fastp: 4
+  bowtie2: 4
+  kraken2: 4
+  metaphlan4: 4
+  centrifuge: 4

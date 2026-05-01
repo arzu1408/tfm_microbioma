@@ -1,0 +1,8 @@
+run,biosample,condition,replicate,host,project
+DRR318378,SAMD00402751,wildtype_Col0,pot1,arabidopsis,PRJDB12268
+DRR318379,SAMD00402752,wildtype_Col0,pot2,arabidopsis,PRJDB12268
+DRR318380,SAMD00402753,wildtype_Col0,pot3,arabidopsis,PRJDB12268
+DRR318381,SAMD00402754,phr1phl1_mutant,pot1,arabidopsis,PRJDB12268
+DRR318382,SAMD00402755,phr1phl1_mutant,pot2,arabidopsis,PRJDB12268
+DRR318383,SAMD00402756,phr1phl1_mutant,pot3,arabidopsis,PRJDB12268
+
