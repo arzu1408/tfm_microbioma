@@ -10,13 +10,13 @@ host: arabidopsis
 
 references:
   arabidopsis:
-    bowtie2_index: data/ref/tair10/tair10_index
-    genome: data/ref/tair10/TAIR10.1_genome.fa
+    bowtie2_index: /mnt/d/tfm_data/data/ref/tair10/tair10_index
+    genome: /mnt/d/tfm_data/data/ref/tair10/TAIR10.1_genome.fa
 
 databases:
-  kraken2: data/db/kraken2/k2_pluspf
-  metaphlan4: data/db/metaphlan4
-  centrifuge: data/db/centrifuge/p+h+v
+  kraken2: /mnt/d/tfm_data/data/db/kraken2/k2_pluspf
+  metaphlan4: /mnt/d/tfm_data/data/db/metaphlan4
+  centrifuge: /mnt/d/tfm_data/data/db/centrifuge/p+h+v
 
 params:
   fastp:

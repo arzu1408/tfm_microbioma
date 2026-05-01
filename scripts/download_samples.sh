@@ -2,7 +2,7 @@
 # Download and convert all 6 Arabidopsis samples
 
 SAMPLES="DRR318378 DRR318379 DRR318380 DRR318381 DRR318382 DRR318383"
-OUTDIR="data/raw"
+OUTDIR="/mnt/d/tfm_data/data/raw"
 
 for sample in $SAMPLES; do
     echo "=========================================="
