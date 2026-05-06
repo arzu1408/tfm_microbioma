@@ -1,3 +1,7 @@
+# paths
+raw_data: /mnt/d/tfm_data/data/raw
+results: /mnt/d/tfm_data/results
+
 samples:
   - DRR318378
   - DRR318379
@@ -21,7 +25,11 @@ databases:
 params:
   fastp:
     min_length: 50
-    quality: 20
+    quality: 26
+    trim_front: 15
+    adapter_type: Nextera Transposase Sequence
+    adapter_r1: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG
+    adapter_r2: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG
   bowtie2:
     mode: very-sensitive
   kraken2:
