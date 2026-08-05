@@ -1,0 +1,50 @@
+# ============================================
+# Config - Arabidopsis thaliana (Fase A)
+# PRJDB12268 - Wildtype vs phr1phl1 mutant
+# ============================================
+
+species: "arabidopsis"
+host_name: "Arabidopsis thaliana"
+
+samples:
+  DRR318378: "Wildtype"
+  DRR318379: "Wildtype"
+  DRR318380: "Wildtype"
+  DRR318381: "phr1phl1"
+  DRR318382: "phr1phl1"
+  DRR318383: "phr1phl1"
+
+conditions:
+  control: "Wildtype"
+  treatment: "phr1phl1"
+
+# Paths
+raw_data_dir: "/mnt/d/tfm_data/data/raw"
+results_dir: "/mnt/d/tfm_data/results"
+ref_genome: "/mnt/d/tfm_data/data/ref/tair10/TAIR10_genome.fna"
+bowtie2_index: "/mnt/d/tfm_data/data/ref/tair10/tair10_index"
+kraken2_db: "/mnt/d/tfm_data/data/db/kraken2"
+metaphlan4_db: "/mnt/d/tfm_data/data/db/metaphlan4"
+metaphlan4_index: "mpa_vOct22_CHOCOPhlAnSGB_202403"
+centrifuge_db: "/mnt/d/tfm_data/data/db/centrifuge/p_compressed+h+v"
+
+# fastp parameters
+adapters:
+  r1: "TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG"
+  r2: "GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG"
+trim_front: 15
+quality_phred: 26
+min_length: 50
+
+# Bowtie2
+bowtie2_mode: "--sensitive"
+
+# Kraken2
+kraken2_confidence: 0.1
+
+# Bracken
+bracken_read_length: 150
+bracken_threshold: 10
+
+# Optional steps
+run_r_analysis: true

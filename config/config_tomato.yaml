@@ -1,0 +1,50 @@
+# ============================================
+# Config - Solanum lycopersicum (Fase B)
+# PRJNA766489 - Healthy vs Diseased rhizosphere
+# ============================================
+
+species: "tomato"
+host_name: "Solanum lycopersicum"
+
+samples:
+  SRR16079617: "Healthy"
+  SRR16079618: "Healthy"
+  SRR16079619: "Healthy"
+  SRR16079614: "Diseased"
+  SRR16079615: "Diseased"
+  SRR16079616: "Diseased"
+
+conditions:
+  control: "Healthy"
+  treatment: "Diseased"
+
+# Paths
+raw_data_dir: "/mnt/d/tfm_data/data/raw_tomato"
+results_dir: "/mnt/d/tfm_data/results"
+ref_genome: "/mnt/d/tfm_data/data/ref/slm_r2/SLM_r2.1_genome.fna"
+bowtie2_index: "/mnt/d/tfm_data/data/ref/slm_r2/slm_r2_index"
+kraken2_db: "/mnt/d/tfm_data/data/db/kraken2"
+metaphlan4_db: "/mnt/d/tfm_data/data/db/metaphlan4"
+metaphlan4_index: "mpa_vOct22_CHOCOPhlAnSGB_202403"
+centrifuge_db: "/mnt/d/tfm_data/data/db/centrifuge/p_compressed+h+v"
+
+# fastp parameters
+adapters:
+  r1: "TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG"
+  r2: "GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG"
+trim_front: 15
+quality_phred: 26
+min_length: 50
+
+# Bowtie2
+bowtie2_mode: "--sensitive"
+
+# Kraken2
+kraken2_confidence: 0.1
+
+# Bracken
+bracken_read_length: 150
+bracken_threshold: 10
+
+# Optional steps
+run_r_analysis: true
