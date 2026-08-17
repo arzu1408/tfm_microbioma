@@ -20,7 +20,7 @@ references:
 databases:
   kraken2: /mnt/d/tfm_data/data/db/kraken2/k2_pluspf
   metaphlan4: /mnt/d/tfm_data/data/db/metaphlan4
-  centrifuge: /mnt/d/tfm_data/data/db/centrifuge/p+h+v
+  centrifuge: /mnt/d/tfm_data/data/db/centrifuge/p_compressed+h+v
 
 params:
   fastp:
